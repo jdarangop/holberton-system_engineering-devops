@@ -1,2 +1,2 @@
-B#!/bin/bash
+#!/bin/bash
 chown -R betty:holberton .
