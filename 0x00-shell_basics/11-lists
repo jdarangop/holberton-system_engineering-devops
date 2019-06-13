@@ -1,2 +1,2 @@
 B#!/bin/bash
-ls -l . ../ /boot
+ls -al . ../ /boot
