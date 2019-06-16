@@ -1,2 +1,2 @@
 #!/bin/bash
-who | sort
+cut -d: -f1 /etc/passwd
