@@ -1,0 +1,2 @@
+B#!/bin/bash
+paste -sd " \n" | cut -d " "
