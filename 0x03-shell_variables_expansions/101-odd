@@ -1,2 +1,2 @@
-B#!/bin/bash
-paste -sd " \n" | cut -d " "
+#!/bin/bash
+paste -sd " \n" | cut -d " " -f1
