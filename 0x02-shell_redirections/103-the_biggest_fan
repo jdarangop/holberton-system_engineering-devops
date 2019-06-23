@@ -1,2 +1,3 @@
 #!/bin/bash
-sort | cut -d$'\t' -f 1 | uniq -c | sort -r | head -n11 | cut -b 9- | tr -d '\t'
+cut -d$'\t' -f 1 | sort | uniq -c | sort -n -r | head -n11 | cut -b 9- | tr -d '\t'
+
