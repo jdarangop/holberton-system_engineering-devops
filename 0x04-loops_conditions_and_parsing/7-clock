@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
-
-for i in "ls";
+i=0
+while ((i <= 12));
 do
-	echo i | cut -d$"-" -f1
+	echo "Hour:" $i
+	j=1
+	while ((j <= 59));
+	do
+		echo "$j"
+		j=$(( j + 1 ))
+	done
+	i=$(( i + 1 ))
 done
