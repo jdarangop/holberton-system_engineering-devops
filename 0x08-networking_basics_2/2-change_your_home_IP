@@ -1,4 +1,4 @@
-##!/usr/bin/env bash
+#!/usr/bin/env bash
 #Configure server.
 
 cp /etc/hosts ~/tmp
