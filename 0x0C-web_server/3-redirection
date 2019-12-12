@@ -3,5 +3,5 @@
 apt-get update
 apt-get -y install nginx
 echo "Holberton School" > /var/www/html/index.nginx-debian.html
-sed -ie "s/^server {$/server {\n\trewrite ^\/redirect_me https:\/\/www.google.com\/ permanent;/g" /etc/nginx/sites-enabled/default
+sed -ie "s/^server {$/server {\n\trewrite ^\/redirect_me https:\/\/www.google.com\/ permanent;/g" /etc/nginx/sites-available/default
 service nginx restart
