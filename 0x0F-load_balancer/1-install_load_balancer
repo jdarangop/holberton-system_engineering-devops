@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 # Set load balancer
-apt-get install software-properties-common
-add-apt-repository ppa:vbernat/haproxy-1.6
-apt-get update
-apt-get install haproxy=1.6.\*
+apt-get -y update
+apt-get -y install haproxy=1.6.\*
 echo "frontend http
 	bind *:80
 	mode http
