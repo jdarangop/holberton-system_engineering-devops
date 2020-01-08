@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Script to display subdomain and destination
-
-display_domain() {
+display_domain()
+{
 
 	if [ -z "$2" ]
 	then
