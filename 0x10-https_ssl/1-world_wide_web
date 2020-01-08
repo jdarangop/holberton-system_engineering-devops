@@ -12,7 +12,6 @@ display_domain() {
 	else
 		dig "$2.$1" | awk -v subdo="$2" '/;; ANSWER SECTION:/ {getline; print "The subdomain " subdo " is a " $4 " record and points to " $5}'
 	fi
-	return 0
 }
 
 display_domain "$1" "$2"
