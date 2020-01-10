@@ -11,7 +11,7 @@ file { 'holberton school':
 
 file_line { 'Set rewrite':
   path    => '/etc/nginx/sites-available/default',
-  match   => 's/^server {$',
+  match   => '^server {$',
   line    => 'server {\n\trewrite ^\/redirect_me https:\/\/www.google.com\/ permanent;',
   replace => 'true',
 }
@@ -23,7 +23,7 @@ file { 'Display 404-no-found':
 
 file_line { 'Set 404-no-found':
   path    => '/etc/nginx/sites-available/default',
-  match   => 's/^server {$',
+  match   => '^server {$',
   line    => 'server {\n\terror_page 404 \/404_error.html;\n\tlocation = \/404_error.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}',
   replace => 'true',
 }
