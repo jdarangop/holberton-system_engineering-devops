@@ -10,7 +10,8 @@ def top_ten(subreddit):
         Return: the numeber of subscribers or 0 is not a valid subreddit.
     """
     request = get('https://www.reddit.com/r/{}/top.json?limit=10'
-                  .format(subreddit), headers={'User-Agent': 'jdarangop'})
+                  .format(subreddit), headers={'User-Agent': 'jdarangop'},
+                  allow_redirects=False)
 
     if request.status_code != 200:
         print(None)
