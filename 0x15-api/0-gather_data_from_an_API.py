@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Module 0 """
-import sys
 from requests import get
+import sys
 
 
 if __name__ == "__main__":
