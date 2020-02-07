@@ -27,7 +27,7 @@ def count_words(subreddit, word_list, page=None, amount={}):
         after = request.json().get('data').get('after')
         list_post = request.json().get('data').get('children')
         for i in list_post:
-            title = i.get('data').get('title')
+            title = i.get('data').get('title').lower()
             for j in word_list:
                 if amount.get(j) is None:
                     amount[j] = 0
