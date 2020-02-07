@@ -22,7 +22,7 @@ def count_words(subreddit, word_list, page=None, amount={}):
                       allow_redirects=False)
 
     if request.status_code != 200:
-        print()
+        print("", end="")
     else:
         after = request.json().get('data').get('after')
         list_post = request.json().get('data').get('children')
