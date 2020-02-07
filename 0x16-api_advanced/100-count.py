@@ -31,7 +31,7 @@ def count_words(subreddit, word_list, page=None, amount={}):
             for j in word_list:
                 if amount.get(j) is None:
                     amount[j] = 0
-                patterns = re.findall("{} |{}$".format(j, j), title)
+                patterns = re.findall(" {}$|^{} | {} ".format(j, j, j), title)
                 if patterns != []:
                     amount[j] += len(patterns)
         if after:
