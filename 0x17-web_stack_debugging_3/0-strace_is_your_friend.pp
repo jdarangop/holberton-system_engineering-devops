@@ -1,8 +1,6 @@
 # puppet to fix bug
 
-file_line { 'Replace line broken':
+exec { 'Replace String':
+  command => 'sed -i "s/phpp/php/g"',
   path    => '/var/www/html/wp-settings.php',
-  match   => 'phpp',
-  line    => 'php',
-  replace => 'true',
 }
